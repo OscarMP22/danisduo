@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ====== SEO ====== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DANIS DUO · Música en directo para bodas y eventos</title>
+  <meta name="description" content="DANIS DUO: voz y piano en formato acústico. Repertorio elegante para bodas, cócteles y eventos privados. Barcelona y alrededores." />
+  <meta name="keywords" content="música para bodas, dúo acústico, eventos, Barcelona, pianista, cantante" />
+  <link rel="canonical" href="https://tudominio.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DANIS DUO · Música en directo para bodas y eventos" />
+  <meta property="og:description" content="Voz + piano en directo para tu evento. Elegancia, cercanía y repertorio a medida." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tudominio.com/" />
+  <meta property="og:image" content="https://tudominio.com/og-cover.jpg" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos mínimos -->
+  <style>
+    :root { --brand:#d97706; --teal:#0d9488; }
+    body{ font-family:'Inter',sans-serif; color:#374151; background:#fffaf0; }
+    .playfair{ font-family:'Playfair Display',serif; }
+    .btn{ background:var(--brand); color:#fff; padding:.9rem 1.4rem; border-radius:9999px; font-weight:600; box-shadow:0 6px 20px rgba(217,119,6,.35); transition:transform .15s,opacity .2s; }
+    .btn:hover{ transform:translateY(-2px); opacity:.95; }
+    .section{ background:#fff; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.06); }
+    .gradient-line{ height:2px; background:linear-gradient(90deg,var(--brand),var(--teal)); border-radius:1px; }
+    .aspect-video{ aspect-ratio:16/9; }
+    .chip{ padding:.3rem .7rem; border-radius:999px; font-size:.8rem; background:#fff7ed; color:#9a3412; border:1px solid #fed7aa; }
+  </style>
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MusicGroup",
+    "name":"DANIS DUO",
+    "foundingLocation":"Barcelona",
+    "genre":["Pop","Soul","Jazz","Acústico"],
+    "areaServed":"ES",
+    "sameAs":[
+      "https://www.youtube.com/@TU-CANAL",
+      "https://www.instagram.com/TU-PERFIL"
+    ],
+    "member":[
+      {"@type":"Person","name":"Daniel Palací","instrument":"Piano/Teclado"},
+      {"@type":"Person","name":"Daniel Román","instrument":"Voz"}
+    ]
+  }
+  </script>
+</head>
+
+<body class="antialiased">
+  <!-- ====== Barra superior ====== -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-amber-100">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-amber-200 flex items-center justify-center">
+          <span class="playfair text-amber-700 font-bold">DD</span>
+        </div>
+        <span class="playfair text-xl font-bold text-amber-800">DANIS DUO</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#servicios" class="hover:text-amber-700">Servicios</a>
+        <a href="#repertorio" class="hover:text-amber-700">Repertorio</a>
+        <a href="#videos" class="hover:text-amber-700">Vídeos</a>
+        <a href="#faq" class="hover:text-amber-700">FAQ</a>
+        <a href="#contacto" class="hover:text-amber-700">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/34630941905?text=Hola%20DANIS%20DUO%2C%20me%20gustaría%20pedir%20información%20para%20un%20evento"
+           class="btn hidden sm:inline-block">Pedir presupuesto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== Hero ====== -->
+  <section id="inicio" class="mx-auto max-w-6xl px-4 pt-10 md:pt-16">
+    <div class="section p-6 md:p-10 relative overflow-hidden">
+      <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-amber-100 blur-2xl"></div>
+      <div class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-teal-100 blur-3xl"></div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-center relative">
+        <div>
+          <span class="chip">Barcelona · Eventos & Bodas</span>
+          <h1 class="playfair text-4xl md:text-6xl font-bold mt-3 text-amber-800 leading-tight">
+            Música en directo, <span class="text-amber-600">elegante y cercana</span>
+          </h1>
+          <p class="mt-4 text-gray-600 text-lg">
+            Voz y piano en formato acústico. Repertorio de pop, soul y jazz para crear el ambiente perfecto en tu evento.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="btn" href="#contacto">Reservar fecha</a>
+            <a class="btn bg-white text-amber-700 border border-amber-300 shadow-none" href="#videos">Ver vídeos</a>
+          </div>
+          <ul class="mt-6 text-sm text-gray-600 grid grid-cols-2 gap-y-2 max-w-md">
+            <li>• Ceremonias & cócteles</li>
+            <li>• Eventos privados y de empresa</li>
+            <li>• Repertorio personalizable</li>
+            <li>• Equipo de sonido incluido</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-sm border border-amber-100">
+          <!-- Vídeo hero (primer vídeo) -->
+          <div class="aspect-video" id="hero-video"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl px-4 my-10"><div class="gradient-line"></div></div>
+
+  <!-- ====== Servicios ====== -->
+  <section id="servicios" class="mx-auto max-w-6xl px-4">
+    <div class="section p-6 md:p-10">
+      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Servicios</h2>
+      <p class="mt-2 text-gray-600">Nos adaptamos a cada momento de tu evento.</p>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="p-6 rounded-2xl border border-amber-100 bg-amber-50/40">
+          <h3 class="font-semibold text-amber-800">Ceremonia</h3>
+          <p class="text-gray-600 mt-2 text-sm">Entrada, firmas y salida con tus canciones favoritas.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-amber-100 bg-amber-50/40">
+          <h3 class="font-semibold text-amber-800">Cóctel</h3>
+          <p class="text-gray-600 mt-2 text-sm">Clásicos en versión acústica para un ambiente elegante.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-amber-100 bg-amber-50/40">
+          <h3 class="font-semibold text-amber-800">Eventos privados</h3>
+          <p class="text-gray-600 mt-2 text-sm">Fiestas, cenas y celebraciones con repertorio a medida.</p>
+        </div>
+      </div>
+      <div class="mt-6 text-sm text-gray-600">Incluye equipo de sonido y montaje. Cobertura principal: Barcelona y alrededores.</div>
+    </div>
+  </section>
+
+  <!-- ====== Repertorio ====== -->
+  <section id="repertorio" class="mx-auto max-w-6xl px-4 mt-10">
+    <div class="section p-6 md:p-10">
+      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Repertorio destacado</h2>
+      <p class="text-gray-600 mt-2">Ejemplos de canciones que solemos tocar (se puede personalizar).</p>
+      <div class="grid md:grid-cols-2 gap-6 mt-6 text-gray-700">
+        <ul class="space-y-2">
+          <li>• Stand by Me — Ben E. King</li>
+          <li>• Isn’t She Lovely — Stevie Wonder</li>
+          <li>• Perfect — Ed Sheeran</li>
+          <li>• All of Me — John Legend</li>
+          <li>• Thinking Out Loud — Ed Sheeran</li>
+        </ul>
+        <ul class="space-y-2">
+          <li>• Fly Me to the Moon — Sinatra</li>
+          <li>• Valerie — Amy Winehouse</li>
+          <li>• Someone Like You — Adele</li>
+          <li>• La vie en rose — Édith Piaf</li>
+          <li>• Hallelujah — Leonard Cohen</li>
+        </ul>
+      </div>
+      <p class="text-sm text-gray-500 mt-4">¿Tienes una canción especial? La preparamos para tu día.</p>
+    </div>
+  </section>
+
+  <!-- ====== Vídeos ====== -->
+  <section id="videos" class="mx-auto max-w-6xl px-4 mt-10">
+    <div class="section p-6 md:p-10">
+      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Nuestra música en vídeo</h2>
+      <p class="text-gray-600 mt-2">Algunas interpretaciones en directo.</p>
+      <div id="video-list" class="grid md:grid-cols-2 gap-6 mt-6"></div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section id="faq" class="mx-auto max-w-6xl px-4 mt-10">
+    <div class="section p-6 md:p-10">
+      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Preguntas frecuentes</h2>
+      <div class="mt-6 divide-y divide-amber-100">
+        <details class="py-4">
+          <summary class="cursor-pointer font-semibold text-amber-800">¿Os desplazáis fuera de Barcelona?</summary>
+          <p class="mt-2 text-gray-600">Sí, consultadnos la ubicación y os daremos los detalles de desplazamiento.</p>
+        </details>
+        <details class="py-4">
+          <summary class="cursor-pointer font-semibold text-amber-800">¿Podemos pedir canciones específicas?</summary>
+          <p class="mt-2 text-gray-600">¡Claro! Podemos preparar temas especiales con antelación.</p>
+        </details>
+        <details class="py-4">
+          <summary class="cursor-pointer font-semibold text-amber-800">¿Traéis equipo de sonido?</summary>
+          <p class="mt-2 text-gray-600">Sí, llevamos nuestro propio equipo. Solo necesitamos un punto de corriente.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Contacto ====== -->
+  <section id="contacto" class="mx-auto max-w-6xl px-4 my-10">
+    <div class="section p-6 md:p-10">
+      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Contacto y reservas</h2>
+      <div class="grid md:grid-cols-2 gap-8 mt-6">
+        <div class="space-y-3 text-gray-700">
+          <p><b>Teléfono:</b> <a class="text-amber-700 underline" href="tel:+34630941905">+34 630 94 19 05</a></p>
+          <p><b>Email:</b> <a class="text-amber-700 underline" href="mailto:danisduo.group@gmail.com?subject=Solicitud%20de%20presupuesto">danisduo.group@gmail.com</a></p>
+          <p><b>WhatsApp:</b> <a class="text-amber-700 underline" href="https://wa.me/34630941905?text=Hola%20DANIS%20DUO%2C%20me%20gustaría%20información%20para%20un%20evento">Escríbenos</a></p>
+          <p class="text-sm text-gray-500">Cuéntanos fecha, lugar y tipo de evento. Te responderemos con opciones y presupuesto.</p>
+          <div class="mt-4">
+            <a class="btn" href="mailto:danisduo.group@gmail.com?subject=Reserva%20DANIS%20DUO&body=Hola%2C%20queremos%20informaci%C3%B3n%20para%20el%20d%C3%ADa%20...">Pedir presupuesto</a>
+          </div>
+        </div>
+        <form class="space-y-4" onsubmit="return mailtoSubmit(event)">
+          <div>
+            <label class="block text-sm text-gray-600">Nombre</label>
+            <input id="f-name" required class="w-full mt-1 p-3 rounded-xl border border-amber-200" placeholder="Tu nombre" />
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600">Email</label>
+            <input id="f-email" type="email" required class="w-full mt-1 p-3 rounded-xl border border-amber-200" placeholder="tucorreo@email.com" />
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm text-gray-600">Fecha del evento</label>
+              <input id="f-date" type="date" class="w-full mt-1 p-3 rounded-xl border border-amber-200" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-600">Localidad</label>
+              <input id="f-city" class="w-full mt-1 p-3 rounded-xl border border-amber-200" placeholder="Ej. Barcelona" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600">Mensaje</label>
+            <textarea id="f-msg" rows="4" class="w-full mt-1 p-3 rounded-xl border border-amber-200" placeholder="Cuéntanos sobre tu evento..."></textarea>
+          </div>
+          <button class="btn w-full">Enviar</button>
+          <p class="text-xs text-gray-500">Al enviar, se abrirá tu cliente de correo con el mensaje preparado.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-10">
+    © <span id="year"></span> DANIS DUO — Barcelona
+  </footer>
+
+  <!-- ====== Scripts ====== -->
+  <script>
+    // ——— Configuración de vídeos (en orden) ———
+    const VIDEO_LINKS = [
+      "https://youtu.be/eenm1mFMhC4",
+      "https://youtu.be/s0PTG7_gj_g",
+      "https://youtu.be/b-N-oDIwc2k",
+      "https://youtu.be/zTpV-EGq7g0"
+    ];
+
+    // Utilidades
+    const yearEl = document.getElementById('year'); yearEl.textContent = new Date().getFullYear();
+    function parseYouTubeId(url){
+      const m = url.match(/(?:youtu\.be\/|youtube\.com.*(?:v=|embed\/))([^"&?\/\s]{11})/);
+      return m ? m[1] : null;
+    }
+
+    // Fallback miniatura + botón
+    function createLinkCard(youtubeId){
+      const thumb = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+      const url = `https://www.youtube.com/watch?v=${youtubeId}`;
+      const wrap = document.createElement('div');
+      wrap.className = "rounded-2xl overflow-hidden border border-amber-100";
+      wrap.innerHTML = `
+        <a href="${url}" target="_blank" rel="noopener" class="group block relative">
+          <img src="${thumb}" alt="Ver vídeo en YouTube" class="w-full h-full object-cover aspect-video"/>
+          <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <span class="btn bg-white text-amber-700 shadow">Ver en YouTube ▶</span>
+          </div>
+        </a>
+      `;
+      return wrap;
+    }
+
+    // Crear contenedor de iframe (YouTube API lo llenará)
+    function createPlayerShell(youtubeId){
+      const shell = document.createElement('div');
+      shell.className = "rounded-2xl overflow-hidden border border-amber-100";
+      shell.innerHTML = `<div id="player-${youtubeId}" class="aspect-video w-full"></div>`;
+      return shell;
+    }
+
+    // Render listado + hero (DUPLICANDO el primero en la lista)
+    function renderVideoShells(){
+      const ids = VIDEO_LINKS.map(parseYouTubeId).filter(Boolean);
+      if (!ids.length) return [];
+
+      // Hero usa ID distinto para no chocar con la lista
+      const hero = document.getElementById('hero-video');
+      hero.id = `player-hero-${ids[0]}`;
+
+      // Lista: incluye TODOS (también el primero)
+      const grid = document.getElementById('video-list');
+      ids.forEach(id => grid.appendChild(createPlayerShell(id)));
+
+      return ids; // devolvemos todos los ids
+    }
+
+    // Inicializa players en hero y lista; si hay error 101/150, hace fallback
+    function initPlayers(ids){
+      ids.forEach(id => {
+        // hero
+        ["player-hero-", "player-"].forEach(prefix => {
+          const targetId = `${prefix}${id}`;
+          const el = document.getElementById(targetId);
+          if(!el) return;
+
+          new YT.Player(targetId,{
+            width:'100%', height:'100%',
+            videoId:id,
+            playerVars:{ rel:0, modestbranding:1 },
+            events:{
+              onError:(e)=>{
+                if(e && (e.data===101 || e.data===150)){
+                  const card = createLinkCard(id);
+                  const parent = el.closest('.rounded-2xl') || el.parentElement;
+                  parent.replaceWith(card);
+                }
+              }
+            }
+          });
+        });
+      });
+    }
+
+    // Form mailto
+    function mailtoSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('f-name').value.trim();
+      const email = document.getElementById('f-email').value.trim();
+      const date = document.getElementById('f-date').value;
+      const city = document.getElementById('f-city').value.trim();
+      const msg  = document.getElementById('f-msg').value.trim();
+
+      const subject = encodeURIComponent(`Reserva / Presupuesto · ${name}`);
+      const body = encodeURIComponent(
+        `Nombre: ${name}\nEmail: ${email}\nFecha: ${date || '-'}\nLocalidad: ${city || '-'}\n\nMensaje:\n${msg || '-'}`
+      );
+      window.location.href = `mailto:danisduo.group@gmail.com?subject=${subject}&body=${body}`;
+      return false;
+    }
+
+    // Carga YouTube API y arranca
+    (function bootstrap(){
+      const ids = renderVideoShells();
+      const tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(tag);
+      window.onYouTubeIframeAPIReady = ()=> initPlayers(ids);
+    })();
+  </script>
+</body>
+</html>
