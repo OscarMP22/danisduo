@@ -9,12 +9,12 @@
   <meta name="keywords" content="música para bodas, dúo acústico, eventos, Barcelona, pianista, cantante" />
   <link rel="canonical" href="https://tudominio.com/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph (opcional: apunta al logo o a una imagen 1200x630) -->
   <meta property="og:title" content="DANIS DUO · Música en directo para bodas y eventos" />
   <meta property="og:description" content="Voz + piano en directo para tu evento. Elegancia, cercanía y repertorio a medida." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tudominio.com/" />
-  <meta property="og:image" content="https://tudominio.com/og-cover.jpg" />
+  <meta property="og:image" content="logo.jpeg" />
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -53,7 +53,8 @@
     "member":[
       {"@type":"Person","name":"Daniel Palací","instrument":"Piano/Teclado"},
       {"@type":"Person","name":"Daniel Román","instrument":"Voz"}
-    ]
+    ],
+    "image":"logo.jpeg"
   }
   </script>
 </head>
@@ -63,15 +64,15 @@
   <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-amber-100">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#inicio" class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-xl bg-amber-200 flex items-center justify-center">
-          <span class="playfair text-amber-700 font-bold">DD</span>
-        </div>
+        <!-- LOGO en misma carpeta -->
+        <img src="logo.jpeg" alt="Logo DANIS DUO" class="h-9 w-9 object-contain rounded-xl bg-white border border-amber-200" />
         <span class="playfair text-xl font-bold text-amber-800">DANIS DUO</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#servicios" class="hover:text-amber-700">Servicios</a>
         <a href="#repertorio" class="hover:text-amber-700">Repertorio</a>
         <a href="#videos" class="hover:text-amber-700">Vídeos</a>
+        <a href="#galeria" class="hover:text-amber-700">Galería</a>
         <a href="#faq" class="hover:text-amber-700">FAQ</a>
         <a href="#contacto" class="hover:text-amber-700">Contacto</a>
       </nav>
@@ -144,22 +145,20 @@
   <!-- ====== Repertorio ====== -->
   <section id="repertorio" class="mx-auto max-w-6xl px-4 mt-10">
     <div class="section p-6 md:p-10">
-      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Repertorio destacado</h2>
-      <p class="text-gray-600 mt-2">Ejemplos de canciones que solemos tocar (se puede personalizar).</p>
+      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Repertorio</h2>
+      <p class="text-gray-600 mt-2">Selección real de temas. Podemos añadir canciones a petición.</p>
       <div class="grid md:grid-cols-2 gap-6 mt-6 text-gray-700">
         <ul class="space-y-2">
-          <li>• Stand by Me — Ben E. King</li>
           <li>• Isn’t She Lovely — Stevie Wonder</li>
-          <li>• Perfect — Ed Sheeran</li>
-          <li>• All of Me — John Legend</li>
-          <li>• Thinking Out Loud — Ed Sheeran</li>
-        </ul>
-        <ul class="space-y-2">
           <li>• Fly Me to the Moon — Sinatra</li>
           <li>• Valerie — Amy Winehouse</li>
-          <li>• Someone Like You — Adele</li>
           <li>• La vie en rose — Édith Piaf</li>
           <li>• Hallelujah — Leonard Cohen</li>
+        </ul>
+        <ul class="space-y-2">
+          <li>• Your Song — Elton John</li>
+          <li>• After the Love Has Gone — Earth, Wind & Fire</li>
+          <li>• El meu avi — Habanera popular catalana</li>
         </ul>
       </div>
       <p class="text-sm text-gray-500 mt-4">¿Tienes una canción especial? La preparamos para tu día.</p>
@@ -172,6 +171,20 @@
       <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Nuestra música en vídeo</h2>
       <p class="text-gray-600 mt-2">Algunas interpretaciones en directo.</p>
       <div id="video-list" class="grid md:grid-cols-2 gap-6 mt-6"></div>
+    </div>
+  </section>
+
+  <!-- ====== Galería ====== -->
+  <section id="galeria" class="mx-auto max-w-6xl px-4 mt-10">
+    <div class="section p-6 md:p-10">
+      <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">Galería</h2>
+      <p class="text-gray-600 mt-2">Momentos y detalles de actuaciones.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+        <!-- Imágenes locales en la misma carpeta -->
+        <img src="./foto1.jpeg" alt="Galería 1" class="rounded-xl object-cover w-full h-44 md:h-52" loading="lazy" />
+        <img src="./foto2.jpeg" alt="Galería 2" class="rounded-xl object-cover w-full h-44 md:h-52" loading="lazy" />
+        <img src="./foto3.jpeg" alt="Galería 3" class="rounded-xl object-cover w-full h-44 md:h-52" loading="lazy" />
+      </div>
     </div>
   </section>
 
@@ -192,6 +205,44 @@
           <summary class="cursor-pointer font-semibold text-amber-800">¿Traéis equipo de sonido?</summary>
           <p class="mt-2 text-gray-600">Sí, llevamos nuestro propio equipo. Solo necesitamos un punto de corriente.</p>
         </details>
+        <!-- Nueva FAQ pedida -->
+        <details class="py-4">
+          <summary class="cursor-pointer font-semibold text-amber-800">¿Lo quieres todo para tu evento?</summary>
+          <p class="mt-2 text-gray-600">
+            Contáctanos y pregunta por nuestras <b>agrupaciones de 3, 4 y hasta 8 músicos</b>.
+            Podemos añadir contrabajo, batería, guitarra, saxofón o cuerdas según lo que busques.
+            ¡Adaptamos la formación a tu evento!
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA Agrupaciones ====== -->
+  <section id="agrupaciones" class="mx-auto max-w-6xl px-4 mt-10">
+    <div class="section p-6 md:p-10 relative overflow-hidden">
+      <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-amber-100 blur-2xl"></div>
+      <div class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-teal-100 blur-3xl"></div>
+
+      <div class="relative grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h2 class="playfair text-3xl md:text-4xl font-bold text-amber-800">¿Lo quieres todo para tu evento?</h2>
+          <p class="mt-3 text-gray-600 text-lg">
+            Contáctanos y pregunta por nuestras <b>agrupaciones de 3, 4 y hasta 8 músicos</b>:
+            añadimos contrabajo, batería, guitarra, saxofón, cuerdas… ¡lo adaptamos a tu idea!
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="btn" href="https://wa.me/34630941905?text=Hola%20DANIS%20DUO%2C%20quiero%20informaci%C3%B3n%20sobre%20vuestras%20agrupaciones%20de%203-8%20m%C3%BAsicos">WhatsApp</a>
+            <a class="btn bg-white text-amber-700 border border-amber-300 shadow-none" href="mailto:danisduo.group@gmail.com?subject=Consulta%20agrupaciones%203-8%20m%C3%BAsicos&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20opciones%20y%20presupuesto%20para%20un%20formato%20ampliado%20(3-8%20m%C3%BAsicos).">Pedir presupuesto</a>
+          </div>
+        </div>
+        <ul class="bg-amber-50/60 border border-amber-100 rounded-2xl p-5 text-sm text-gray-700">
+          <li>• Trío: voz + piano + contrabajo</li>
+          <li>• Cuarteto: añade batería o guitarra</li>
+          <li>• Quinteto/Seis: saxofón, coros o cuerdas</li>
+          <li>• Hasta 8 músicos: formato banda para baile</li>
+          <li class="mt-2 text-gray-500">Equipos de sonido adaptados a cada formato.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -251,11 +302,11 @@
       "https://youtu.be/eenm1mFMhC4",
       "https://youtu.be/s0PTG7_gj_g",
       "https://youtu.be/b-N-oDIwc2k",
-      "https://youtu.be/zTpV-EGq7g0"
+      "https://youtu.be/zTpV-EGq7g0" // este puede no embeber; hay fallback
     ];
 
     // Utilidades
-    const yearEl = document.getElementById('year'); yearEl.textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
     function parseYouTubeId(url){
       const m = url.match(/(?:youtu\.be\/|youtube\.com.*(?:v=|embed\/))([^"&?\/\s]{11})/);
       return m ? m[1] : null;
@@ -305,7 +356,6 @@
     // Inicializa players en hero y lista; si hay error 101/150, hace fallback
     function initPlayers(ids){
       ids.forEach(id => {
-        // hero
         ["player-hero-", "player-"].forEach(prefix => {
           const targetId = `${prefix}${id}`;
           const el = document.getElementById(targetId);
